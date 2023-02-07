@@ -1293,3 +1293,32 @@ total_precip: double
     The new total precipitation intensity.
 "
 ) swmm_setGagePrecip;
+
+%feature("autodoc", 
+"Get TimeSeries Object index for a gage.
+
+Parameters
+----------
+index: int
+    The index of gage
+type: SM_GageTseries
+    The property type code (see :ref: SM_GageTseries)
+
+Returns
+-------
+GageArray: int*
+    TimeSeries Object index
+"
+) swmm_getGageTseries;
+
+%feature("autodoc", 
+"Set a TimeSeries to the gage.
+
+Parameters
+----------
+index: int
+    The gage index.
+id: char *
+    The object ID of the TimeSeries.
+"
+) swmm_setGageTseries;

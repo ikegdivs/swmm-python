@@ -99,6 +99,8 @@
 
 %rename(raingage_get_precipitation)         swmm_getGagePrecip;
 %rename(raingage_set_precipitation)         swmm_setGagePrecip;
+%rename(raingage_get_timeseries)            swmm_getGageTseries;
+%rename(raingage_set_timeseries)            swmm_setGageTseries;
 
 
 %rename(swmm_version_info)                  swmm_getSemVersion;
